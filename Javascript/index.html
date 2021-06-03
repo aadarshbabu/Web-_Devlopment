@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is the test site.</title>
+</head>
+<body>
+    <style>
+        #btn{
+            display: block;
+            margin: 20px auto;
+            padding: 12px 9px;
+            outline: none;
+            background-color: green;
+            color: white;
+            border: none;
+            font-family: 'Times New Roman', Times, serif;
+            cursor: pointer;
+        }
+        .div{
+            margin: 30px auto;
+            width: 100vh;
+            height: 80px;
+            background-color: rgb(109, 109, 163);
+        }
+    </style>
+    <h1>This is the test site..</h1>
+    <div class="div">
+
+    </div>
+    <button id="btn">Click Hear</button>
+<script>
+
+            // first way to call the event ....
+        let btnobj=document.querySelector('#btn');
+        //  btnobj.hover=function(){
+        //   document.querySelector('.div').innerHTML="hello world";
+        //  }
+
+            // second way to call the event. in javasecipt.. event..
+            // btnobj.addEventListener('click',()=>{
+            //     document.querySelector('.div').innerHTML="hello world";
+            // })
+
+            const testfun = ()=>{
+              
+                document.querySelector('.div').innerHTML="hello world";
+                console.log(event);
+            }
+            
+      
+            // you can call the funcion to call the event.
+            // but it's improtent to first define the functione then call the funcion.
+            // if you first call the event. then decleared the function..
+            // script product the error..
+
+                // btnobj.addEventListener('click',testfun);
+
+        // mouse enter and leave is a event it trigger if mouse are go on the praticular div element ..
+        
+        // below this funcion is the annomance function.
+            btnobj.addEventListener('mouseenter', () => {
+                let curdate= Date();
+                document.querySelector('.div').style.background='red';
+            }, 1000)
+            btnobj.addEventListener('mouseleave', () => {
+                let curdate= Date();
+                document.querySelector('.div').style.background="blue"
+            }, 1000)
+
+    
+</script>
+</body>
+</html>

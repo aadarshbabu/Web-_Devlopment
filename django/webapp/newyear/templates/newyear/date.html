@@ -1,0 +1,11 @@
+{% extends "newyear/layout.html" %}
+{% block body%}
+    <h2> Today Date is :- {{now}}  </h2>
+    
+    <h3>Your Next New Year is {{nextNewYear}} </h3>
+
+    <a href="{% url 'newyear:newyear' %}">NewYear Left</a>
+
+
+ 
+{% endblock%}

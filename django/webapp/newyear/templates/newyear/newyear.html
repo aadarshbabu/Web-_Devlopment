@@ -1,0 +1,13 @@
+{% extends "newyear/layout.html" %}
+
+{% block body%}
+    {% if newyear %}
+    <h1>Yes</h1>
+    {% else %}
+    <h1>No</h1>
+    {% endif %}
+
+    <a href="{% url 'newyear:date' %}">NewYear Left</a>
+{% endblock %}
+
+
