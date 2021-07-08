@@ -9,11 +9,11 @@ console.log(curdate);
 // both object is return the same value.
 
 
+console.log(curdate);
 
-function time(){
-    setInterval(()=>{
-        console.log(curdate.toLocaleTimeString());
-    },1000)
-}
+// function time(){
+//     setInterval(()=>{
+//     },1000)
+// }
 
-time();
+// time();
