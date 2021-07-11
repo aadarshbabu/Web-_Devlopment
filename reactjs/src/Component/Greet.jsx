@@ -25,13 +25,11 @@ export function Greet() {
         style.color="Black"
     }
     
-      
-
-
+    
     return (
         <>
             <div className="greet">
-                <h2> Hello Aadarsh <span style={style}> {greet} </span></h2>
+                <h2 className='info'> Hello Aadarsh <span style={style}> {greet} </span></h2>
             </div>
         </>
     );
