@@ -1,15 +1,90 @@
-
-
-.greet{
-
-  text-align: center;
-    margin-top: 250px;
-    font-size: large;
-   text-transform: capitalize;
+:root {
+  --red: red;
 }
-.info{
+
+.greet,
+.count {
+  text-align: center;
+  margin-top: 250px;
+  font-size: large;
+  text-transform: capitalize;
+}
+
+.info {
   background-color: rgba(255, 255, 255, 0.945);
-   border-radius: 2px;
-   display: inline;
-  
+  border-radius: 2px;
+  display: inline;
+}
+
+.card {
+  margin: 20px auto;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+/* Todo App in Css */
+.todo {
+  min-height: 20rem;
+  width: 15rem;
+  padding-bottom: 1rem;
+  background-color: white;
+  border-radius: 2rem;
+  margin: 3rem auto;
+  box-shadow: 5px 4px 9px 0.5px rgba(83, 83, 83, 0.945);
+}
+label {
+  display: block;
+  margin: 10px 0 auto;
+  padding: 10px 10px;
+  text-align: center;
+  background-color: rgb(97, 28, 143);
+  color: white;
+}
+.inputbox {
+  /* box-shadow: 1px 3px 6px 0.5px rgba(83, 83, 83, 0.945); */
+  margin: 1rem auto;
+  /* border-radius: 0 1rem 1rem 0; */
+  outline: none;
+  padding: 0 1rem;
+  width: 85%;
+  height: auto;
+  border: none;
+  border-bottom: 3px black solid;
+}
+.btn {
+  border-radius: 30px;
+  color: white;
+  background-color: green;
+  width: auto;
+  font-size: small;
+  text-align: center;
+  display: block;
+  margin: 0px auto;
+}
+.list {
+  /* margin: 0 1px 0.5rem; */
+  /* padding: 1px 5px 2px; */
+  display: flex;
+  width: inherit;
+  height: max-content;
+  margin: 0;
+  /* background-color: rgb(223, 217, 217); */
+}
+.list i {
+  margin: 5px 0.5rem;
+  padding: 0px 2px;
+  /* background-color: rgb(148, 21, 70); */
+  color: rgb(100, 10, 10);
+  /* font-size: x-small; */
+  cursor: pointer;
+}
+.list ol li {
+  text-align: justify;
+  list-style-type: none;
+  text-transform: capitalize;
+  font-weight: bold;
 }
