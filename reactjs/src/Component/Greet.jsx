@@ -1,6 +1,11 @@
-import React from 'react';
-import '../App.css';
+import React, { useContext } from 'react';
+import '.././Css/App.css';
+import { Fullname } from '.././App';
+
 export function Greet() {
+
+      const val= useContext(Fullname); // Use context is use for Get the value in provider..
+
     const curDate = Date()
     console.log(curDate)
     let greet = "";
@@ -28,9 +33,10 @@ export function Greet() {
     
     return (
         <>
-            <div className="greet">
-                <h2 className='info'> Hello Aadarsh <span style={style}> {greet} </span></h2>
-            </div>
+              <div className="greet">
+              <h2 className='info'> Hello Aadarsh <span style={style}> {greet} {val.fname} {val.lname} </span></h2>
+              </div>
+        
         </>
     );
 

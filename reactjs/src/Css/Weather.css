@@ -1,0 +1,39 @@
+.main {
+  /* background-image: url(.././Images/weatherbg.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 230px;
+  min-height: 300px;
+  background-color: rgb(223, 82, 187);
+  background: linear-gradient(200deg,rgb(136, 111, 115),rgb(139,26,47), green);
+  margin: 30px auto;
+  /* border: 1px solid black; */
+  border-radius: 3px;
+  box-shadow: 4px 2px 5px 4px rgba(0, 0, 0, 0.452);
+}
+.inp {
+  margin: 10px 10px;
+
+  border: none;
+  outline: none;
+  padding: 3px 6px;
+}
+.showdata {
+  margin: 30px auto;
+}
+h2,
+h3,
+h4,
+h6 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 10px 0 auto;
+}
+span{
+  display: block;
+  color:white;
+  text-align: center;
+  margin: 10px 0 auto;
+
+}
