@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import ".././Css/App.css";
 const InputData = () => {
   // Main Funcion
 
@@ -13,7 +13,7 @@ const InputData = () => {
 
   const submit = (e) => {
     e.preventDefault();
-   setShowData([...showData, Userdata]);
+    setShowData([...showData, Userdata]);
 
     // both are array as object. append the object.
     // it's meane  [...showData, Userdata], Set the ShowData object and append the Userdataobject. and append the State.
@@ -32,7 +32,6 @@ const InputData = () => {
         <form>
           <h2> </h2>
           <label htmlFor="name">Enter a name</label>
-
           <input
             placeholder="Enter a name"
             onChange={data}

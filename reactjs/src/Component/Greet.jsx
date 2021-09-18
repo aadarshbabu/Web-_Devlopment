@@ -1,42 +1,40 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import '.././Css/App.css';
-import { Fullname } from '.././App';
+// import { Fullname } from '.././App';
 
 export function Greet() {
 
-      const val= useContext(Fullname); // Use context is use for Get the value in provider..
+    // const val = useContext(Fullname); // Use context is use for Get the value from  provider..
 
     const curDate = Date()
     console.log(curDate)
     let greet = "";
-    let Time=10;
+    let Time = 10;
 
-    let style ={
+    let style = {
         textTransform: "capitalize"
-        
+
     }
-    if(Time>6 && Time <11)
-    {
-        greet="good Morning";
-        style.color= "green";
+    if (Time > 6 && Time < 11) {
+        greet = "good Morning";
+        style.color = "green";
     }
-    else if (Time >= 12 || Time < 6 )
-    {
+    else if (Time >= 12 || Time < 6) {
         greet = "Good AfterNoon"
-        style.color= "orange";
+        style.color = "orange";
     }
-    else if(Time > 4 && Time < 10){
+    else if (Time > 4 && Time < 10) {
         greet = "Good Night"
-        style.color="Black"
+        style.color = "Black"
     }
-    
-    
+
+
     return (
         <>
-              <div className="greet">
-              <h2 className='info'> Hello Aadarsh <span style={style}> {greet} {val.fname} {val.lname} </span></h2>
-              </div>
-        
+            <div className="greet">
+                <h1 className='info'>Hello Aadarsh<span style={style}> {greet}</span></h1>
+            </div>
+
         </>
     );
 

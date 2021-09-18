@@ -36,7 +36,7 @@
   margin: 3rem auto;
   box-shadow: 5px 4px 9px 0.5px rgba(83, 83, 83, 0.945);
 }
-label {
+.todo label {
   display: block;
   margin: 10px 0 auto;
   padding: 10px 10px;
@@ -44,7 +44,7 @@ label {
   background-color: rgb(97, 28, 143);
   color: white;
 }
-.inputbox {
+.todo .inputbox {
   /* box-shadow: 1px 3px 6px 0.5px rgba(83, 83, 83, 0.945); */
   margin: 1rem auto;
   /* border-radius: 0 1rem 1rem 0; */
@@ -55,7 +55,7 @@ label {
   border: none;
   border-bottom: 3px black solid;
 }
-.btn {
+.todo .btn {
   border-radius: 30px;
   color: white;
   background-color: green;
@@ -65,26 +65,52 @@ label {
   display: block;
   margin: 0px auto;
 }
-.list {
+
+/* View Todo component */
+.todo .list {
   /* margin: 0 1px 0.5rem; */
   /* padding: 1px 5px 2px; */
   display: flex;
   width: inherit;
-  height: max-content;
+  height: 2rem;
   margin: 0;
   /* background-color: rgb(223, 217, 217); */
 }
-.list i {
-  margin: 5px 0.5rem;
-  padding: 0px 2px;
-  /* background-color: rgb(148, 21, 70); */
+.todo .list i {
+  margin: 6px 6px;
   color: rgb(100, 10, 10);
-  /* font-size: x-small; */
   cursor: pointer;
 }
-.list ol li {
-  text-align: justify;
+.todo .list ol{
+  padding: 2px;
+}
+.todo .list ol li {
   list-style-type: none;
   text-transform: capitalize;
   font-weight: bold;
+}
+
+
+/* This part of css is Header Section */
+.navlink{
+  display: flex;
+  padding: 6px 10px;
+  background-color: orangered;
+  
+}
+.navlink li{
+  margin: 10px auto;
+  list-style: none;
+}
+.navlink li>a{
+  padding: 7px 8px;
+  background-color: blue;
+  margin: 7px 5px;
+  text-decoration: none;
+  color: white;
+  border-radius: 6px;
+}
+.navlink li>a:hover{
+  background-color: blueviolet;
+  color: wheat;
 }

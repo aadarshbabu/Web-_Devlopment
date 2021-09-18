@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import { ViweTodo } from "./viewTodo";
-
+import ".././Css/App.css";
 function TodoApp() {
   const [userData, setuserData] = useState("");
   const [todo, settodo] = useState([]);
   let addTodo = () => {
-    settodo([...todo, userData]);
+    if (userData.length > 3) {
+      settodo([...todo, userData]);
+    }
     setuserData("");
+
   };
   let data = (e) => {
     setuserData(e.target.value);
@@ -28,7 +31,7 @@ function TodoApp() {
           type="text"
           onChange={data}
           name="todotext"
-          placeHolder="Enter Todo List"
+          placeholder="Enter Todo List"
           value={userData}
           id=""
         />

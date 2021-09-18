@@ -1,39 +1,43 @@
 // api https://data.covid19india.org/data.json to get data..
-// import bootstrap from 'bootstrap';
-import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useEffect, useState } from 'react'
+import Covid19data from './covid19data';
 
 function Covid19Status() {
+    const [data, setData] = useState([]);
+
+    async function getdata() {
+        const res = await fetch('https://data.covid19india.org/data.json');
+        if (res.status === 200) {
+            let responceJson = await res.json();
+            let { statewise } = responceJson;
+            setData(statewise);
+            console.log(data[0]);
+        }
+    }
+
+    useEffect(() => {
+        getdata();
+    }, []);
+
     return (
         <>
-            <table className="table">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div className="container">
+                <table className="table table-striped">
+                    <thead>
+                        <tr className="table-info">
+                            <th scope="col">#</th>
+                            <th scope="col">State</th>
+                            <th scope="col">Recovered</th>
+                            <th scope="col">Confirmed</th>
+                            <th scope="col">Active</th>
+                        </tr>
+                    </thead>
+                    {data.map((obj, index) => {
+                        return <Covid19data value={obj} index={index} key={index} />
+                    })}
+                </table>
+            </div>
         </>
     )
 }
