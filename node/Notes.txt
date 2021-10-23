@@ -1,0 +1,18 @@
+Node js All file module. Sync and async methods are internally called a System calls. And allow to change the file and create or delete a folder.
+
+
+Note 2.
+_________________________________________________
+
+express --view=hbs ExpressJs -> 
+this command will create a folder structure in ExpressJs. and its inisilize the package and put the dependencies which is usefull to delloping the Express application.
+"express " is a command in express appliation generator.
+
+" --view=hbs" is a command which is create a add (handlebars engine support) there are also a different type of handlebars engine avliable in market.
+
+"expressjs" is a folder (destination) where Express created a folder structure..
+
+when you run this command folders structure has been created. and go to the directory and . run command " npm install." this command will add the total dependencies which is present in your package.json file.
+
+
+// NPX allow to run npm command without install. like if your system has not install cowsay module . you just run cow say commane liek " npx cowsay hllo "  npx first find the module in Your local lib and. if not find it install them and run the cowsay.

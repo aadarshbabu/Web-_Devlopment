@@ -64,6 +64,7 @@ function Home() {
   );
 }
 
+
 function name({ match }) {
   console.log(match)
   return (
