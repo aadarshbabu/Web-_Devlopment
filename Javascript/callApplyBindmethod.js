@@ -54,5 +54,7 @@ let sapratefunc = printfullname.bind(obj1, arr, ['aurangabad', 'bihar']);
 // console.log(sapratefunc);
 sapratefunc()
 
-// sapratefunction() is a copy of the printfullname() that is bind with 1) passing objcet argument as well as 2) array argumet and so on.
+// sapratefunction() is a copy of the printfullname() that is bind with 1st passing objcet argument as well as 2nd array argumet and 3re 4th and so on.
+
+
 
