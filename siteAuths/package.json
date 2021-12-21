@@ -1,0 +1,28 @@
+{
+  "name": "siteauths",
+  "version": "1.0.0",
+  "description": "this is the site auth projects",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon ./app.js -e .*"
+  },
+  "keywords": [
+    "Auth",
+    "With",
+    "Express",
+    "mongodb"
+  ],
+  "author": "aadarsh singh",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "hbs": "^4.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.0",
+    "nodemon": "^2.0.15",
+    "validator": "^13.7.0"
+  }
+}
