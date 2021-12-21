@@ -9,7 +9,7 @@ const userauth = (req, res, next) => {
         jwt.verify(secret, process.env.Secret);
         next();
     } catch (error) {
-        res.render("login");
+        res.redirect('/login');
     }
 }
 

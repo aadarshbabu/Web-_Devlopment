@@ -10,11 +10,10 @@ const indexPage = (req, res) => {
     res.render("index");
 }
 
-
 const logout = (req, res) => {
     try {
         res.clearCookie('secret');
-        res.render("login");
+        res.redirect("/login");
     } catch (error) {
         console.log(error)
     }
