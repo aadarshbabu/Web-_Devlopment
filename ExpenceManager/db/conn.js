@@ -2,7 +2,7 @@
 const mongoose = require("mongoose");
 async function connection() {
 
-    const con = await mongoose.connect("mongodb+srv://aadarsh:Aadarsh123@cluster0.2emw5.mongodb.net/ExpenceManager?retryWrites=true&w=majority");
+    const con = await mongoose.connect("y");
 
     if (con) {
         console.log("connected");
