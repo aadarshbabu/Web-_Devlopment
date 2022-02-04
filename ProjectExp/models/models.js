@@ -21,7 +21,7 @@ let setTask = async (task, iscomplited, cb) => {
 }
 
 
-let setuser = async (userid, passowrd, email) => {
+let setuser = async () => {
 
 
 

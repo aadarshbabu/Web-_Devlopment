@@ -58,7 +58,7 @@ const userRegistration = async (req, res, next) => {
     // Below line of code. is run after Post request
     try {
         let resp = await user.create(req.body);
-        res.status(200).json(resp);
+        res.status(200).redirect("/login");
     } catch (error) {
         next(customError(error, 500))
     }

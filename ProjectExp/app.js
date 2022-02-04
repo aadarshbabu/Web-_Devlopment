@@ -11,6 +11,7 @@ const port = process.env.port || 3000;
 
 //MidileWare
 app.use(express.json());
+
 app.use(express.static("./public"));
 
 

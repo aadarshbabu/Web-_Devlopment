@@ -14,11 +14,12 @@ con.connect((error) => {
         console.log(error)
     }
 });
+
 con.query("use todo");
+
 con.query('SELECT 1 + 1 AS solution', function (err, rows, fields) {
     if (err) throw err
-
-    console.log('The solution is: ', rows[0].solution)
+    console.log("database is connected and running")
 })
 
 

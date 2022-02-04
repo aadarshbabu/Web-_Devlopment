@@ -5,6 +5,7 @@
 
 
 let asycnWraper = (fn) => {
+
     return async (req, res, next) => {
 
         try {
@@ -13,6 +14,7 @@ let asycnWraper = (fn) => {
             next(error);
         }
     }
+
 }
 
 module.exports = asycnWraper;
