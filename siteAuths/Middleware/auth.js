@@ -18,7 +18,7 @@ const userauth = (req, res, next) => {
 function createToken() {
     const secret = jwt.sign({ id: this._id }, process.env.Secret);
     console.log(this.session);
-    this.session.push({ secret })
+    this.session.push({ secret });
 
 }
 
